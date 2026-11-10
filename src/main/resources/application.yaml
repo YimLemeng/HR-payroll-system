@@ -52,7 +52,7 @@ spring:
 app:
   jwt:
     secret: ${JWT_SECRET:}
-    expiration-ms: ${JWT_EXPIRATION:86400000}
+    expiration-ms: ${JWT_EXPIRATION:}
   bootstrap-admin:
     username: ${BOOTSTRAP_ADMIN_USERNAME:}
     email: ${BOOTSTRAP_ADMIN_EMAIL:}

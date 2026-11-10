@@ -5,7 +5,7 @@ services:
     restart: unless-stopped
     environment:
       POSTGRES_DB: ${DB_NAME:-hr_payroll_db}
-      POSTGRES_USER: ${DB_USERNAME:-postgres}
+      POSTGRES_USER: ${DB_USERNAME:-payroll}
       POSTGRES_PASSWORD: ${DB_PASSWORD}
     ports:
       - "${DB_PORT:-5434}:5432"
@@ -62,7 +62,7 @@ services:
     environment:
       SPRING_PROFILES_ACTIVE: ${SPRING_PROFILES_ACTIVE:-prod}
       DB_URL: jdbc:postgresql://postgres:5432/${DB_NAME:-hr_payroll_db}
-      DB_USERNAME: ${DB_USERNAME:-postgres}
+      DB_USERNAME: ${DB_USERNAME:-payroll}
       DB_PASSWORD: ${DB_PASSWORD}
       REDIS_HOST: redis
       REDIS_PORT: 6379
