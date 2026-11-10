@@ -283,47 +283,6 @@ The system enforces two strict administrative operational roles:
 
 ---
 
-## 🐳 Containerized Production Deployment
-
-The project provides a production-hardened `docker-compose.yml` orchestrating PostgreSQL, Redis, and the Spring Boot API:
-
-```mermaid
-flowchart LR
-    HOST["Host Server"] -->|Port 8080| API["hr_payroll_api (Spring Boot)"]
-    HOST -->|Port 5434:5432| DB["hr_payroll_db (PostgreSQL 16)"]
-    HOST -->|Port 6379:6379| REDIS["hr_payroll_redis (Redis 7)"]
-    API -->|Internal Network| DB
-    API -->|Internal Network| REDIS
-```
-
-1. **Prepare your production environment file:**
-   ```bash
-   cp .env.example .env
-   nano .env
-   ```
-
-2. **Start the multi-container stack:**
-   ```bash
-   docker compose up -d --build
-   ```
-
-3. **Check container status:**
-   ```bash
-   docker compose ps
-   ```
-
-4. **Monitor live logs:**
-   ```bash
-   docker compose logs -f api
-   ```
-
-5. **Stop the stack safely:**
-   ```bash
-   docker compose down
-   ```
-
----
-
 ## ⚙️ Environment Variables Reference
 
 | Variable | Description | Default in Development |
