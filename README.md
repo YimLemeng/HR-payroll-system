@@ -283,26 +283,6 @@ The system enforces two strict administrative operational roles:
 
 ---
 
-## ⚙️ Environment Variables Reference
-
-| Variable | Description | Default in Development |
-| :--- | :--- | :--- |
-| `API_PORT` | Host port exposed for Spring Boot API | `8080` |
-| `SPRING_PROFILES_ACTIVE` | Active Spring configuration profile | `prod` (or `local`) |
-| `DB_PORT` | Host port mapped to PostgreSQL container | `5434` *(avoids port 5432 conflicts)* |
-| `DB_NAME` | PostgreSQL database name | `hr_payroll_db` |
-| `DB_USERNAME` | PostgreSQL database username | `postgres` (or `payroll`) |
-| `DB_PASSWORD` | PostgreSQL database password | *Supplied via `.env`* |
-| `REDIS_PORT` | Host port mapped to Redis container | `6379` |
-| `REDIS_PASSWORD` | Optional password for Redis authentication | *Supplied via `.env`* |
-| `JWT_SECRET` | 256-bit Base64 secret key for token signing | *Supplied via `.env`* |
-| `JWT_EXPIRATION` | JWT token validity lifespan in milliseconds | `86400000` *(24 hours)* |
-| `BOOTSTRAP_ADMIN_USERNAME` | Initial system administrator username | *Supplied via `.env`* |
-| `BOOTSTRAP_ADMIN_EMAIL` | Initial system administrator email | *Supplied via `.env`* |
-| `BOOTSTRAP_ADMIN_PASSWORD` | Initial system administrator password | *Supplied via `.env`* |
-
----
-
 ## 📄 License
 
 This project is licensed under the [MIT License](LICENSE).
