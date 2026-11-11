@@ -1,5 +1,6 @@
 # HR & Payroll Management System REST API
 
+[![Live Demo](https://img.shields.io/badge/Demo-Live%20Preview-success?logo=cloudflare)](https://hr-payroll.yimlemeng.workers.dev)
 [![Java](https://img.shields.io/badge/Java-25-ED8B00?logo=openjdk&logoColor=white)](https://openjdk.org/)
 [![Spring Boot](https://img.shields.io/badge/Spring_Boot-3.5-6DB33F?logo=springboot&logoColor=white)](https://spring.io/projects/spring-boot)
 [![PostgreSQL](https://img.shields.io/badge/PostgreSQL-16-4169E1?logo=postgresql&logoColor=white)](https://www.postgresql.org/)
@@ -8,6 +9,17 @@
 [![License](https://img.shields.io/badge/License-MIT-purple.svg)](LICENSE)
 
 An enterprise-grade, highly secure RESTful backend API for **Human Resources, Attendance, Leave Administration, and Automated Payroll Processing**. Built with clean architecture, strict DTO isolation, comprehensive Jakarta Bean Validation, distributed token revocation, and automated database migrations.
+
+---
+
+## 🌐 Live Demo & Credentials
+
+Experience the live application deployed on Cloudflare Workers / Pages:
+
+🔗 **Live Demo Website**: [https://hr-payroll.yimlemeng.workers.dev](https://hr-payroll.yimlemeng.workers.dev)  
+⚙️ **Frontend UI Repository**: [https://github.com/YimLemeng/HR-payroll-system-UI](https://github.com/YimLemeng/HR-payroll-system-UI)  
+
+> 👤 **Test Accounts**: `admin` / `Admin@123` (Admin) • `sok_hr` / `Sokhr@123` (HR)
 
 ---
 
