@@ -1,6 +1,5 @@
 # HR & Payroll Management System REST API
 
-[![Live Demo](https://img.shields.io/badge/Demo-Live%20Preview-success?logo=cloudflare)](https://hr-payroll.yimlemeng.workers.dev)
 [![Java](https://img.shields.io/badge/Java-25-ED8B00?logo=openjdk&logoColor=white)](https://openjdk.org/)
 [![Spring Boot](https://img.shields.io/badge/Spring_Boot-3.5-6DB33F?logo=springboot&logoColor=white)](https://spring.io/projects/spring-boot)
 [![PostgreSQL](https://img.shields.io/badge/PostgreSQL-16-4169E1?logo=postgresql&logoColor=white)](https://www.postgresql.org/)
