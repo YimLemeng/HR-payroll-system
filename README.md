@@ -22,6 +22,51 @@ Experience the live application deployed on Cloudflare Workers / Pages:
 
 ---
 
+## 🚀 Key Features
+
+- **🔐 Enterprise Authentication & Token Revocation**:
+  - Stateless JWT authentication with HMAC-SHA256 signature verification.
+  - Distributed Redis-backed token blacklist for instant logout token invalidation.
+  - Password hashing using BCrypt and Spring Security 6 integration.
+  - Automated bootstrap administrator provisioning on first boot.
+
+- **👥 Employee Lifecycle Management**:
+  - Comprehensive employee master records (Employee Code, Full Name, Gender, DOB, Contact, Hire Date, Status).
+  - Department assignments and individual basic salary configurations.
+  - Employment status lifecycle tracking (`ACTIVE`, `INACTIVE`, `TERMINATED`).
+
+- **🏢 Department Governance**:
+  - Division structures with unique naming constraints.
+  - Headcount distribution monitoring and departmental budget aggregation.
+
+- **🕒 Daily Attendance & Overtime Tracking**:
+  - Daily time tracking with clock-in and clock-out stamps.
+  - Multi-state attendance tracking (`PRESENT`, `LATE`, `ABSENT`, `HALF_DAY`).
+  - Automatic overtime hours calculation with note auditing.
+
+- **📅 Leave Request Management**:
+  - Multi-type leave applications (`ANNUAL`, `SICK`, `UNPAID`, `MATERNITY`).
+  - Date overlap validation and automated total day counting.
+  - Multi-step review flow (`PENDING`, `APPROVED`, `REJECTED`) with reviewer audit trails.
+
+- **💰 Transactional Payroll Calculation Engine**:
+  - Monthly automated calculation with ACID transactional safety:
+    - Base Salary + 10% Allowance + 1.5x Overtime rate.
+    - Statutory Deductions (5%) + Income Tax withholding (10%).
+    - Mathematical precision Net Pay calculation.
+  - Multi-stage payment lifecycle: `CALCULATED` ➔ `APPROVED` ➔ `PAID`.
+  - Batch summary generation for managerial audits and payslip generation.
+
+- **🛡️ Role-Based Access Control (RBAC)**:
+  - Strict method-level authorization with `@PreAuthorize`.
+  - Differentiated permission scopes for `ADMIN` (System governance) and `HR` (Operations).
+
+- **🗃️ Database Migrations & OpenAPI**:
+  - Production Flyway migrations with strict versioning and schema reproducibility.
+  - Interactive OpenAPI 3 / Swagger UI with relative server routing and Bearer token testing.
+
+---
+
 ## 🏛️ System Architecture
 
 ```mermaid
